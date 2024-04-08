@@ -185,4 +185,23 @@ public class Calculator {
 
     }
 
+    public static void testUnitarCalculate(){
+        List<Float> numbers = new ArrayList<>();
+        float firstNumber = 3.0f;
+        float secondNumber = 2.0f;
+        numbers.add(firstNumber);
+        numbers.add(secondNumber);
+
+        float expectedDivisionResult = 1.5f;
+        List<String> operationList = new ArrayList<>();
+        operationList.add(String.valueOf(Operations.DIVISION_SYMBOL));
+        Calculator.Calculate(numbers, operationList);
+
+        if(expectedDivisionResult == finalResult){
+            System.out.println("Test Succeeded");
+        } else{
+            System.out.println("Test failed for expression: " + String.format("%f %s %f", firstNumber, String.valueOf(Operations.DIVISION_SYMBOL), secondNumber));
+        }
+    }
+
 }

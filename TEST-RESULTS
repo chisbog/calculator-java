@@ -1,0 +1,113 @@
+1. Test case 1 (adunare intre 2 numere naturale pozitive)
+in: 1 + 2
+expected: 3
+actual: 3
+passed: true
+
+2. Test case 2 (adunare intre 2 numere decimale pozitive)
+in: 2.3 + 3.1
+expected: 5.4
+actual: 5.399996
+passed: false
+
+3. Test case 3 (adunare intre 2 numere naturale unul pozitiv/negativ)
+in: -1 + 2
+expected: 1
+actual: 1
+passed: true
+
+4. Test case 4 (adunare intre 2 numere decimale unul pozitiv/negativ)
+in: -1.5 + 2.7
+expected: 1.2
+actual: 1.2
+passed: true
+
+5. Test case 5 (adunare intre 2 numere negative)
+in: -1.4 + -6
+expected: -7.4
+actual: ERROR
+passed: false
+
+6. Test case 6 (scaderea cu dintr-un numar negativ)
+in: -1.4-6
+expected: -7.4
+actual: -7.4
+passed: false
+
+7. Inmultirea cu 0
+in: 1*0
+expected: 0
+actual: 0
+passed: true
+
+8. Impartirea cu 0
+in: 1/0
+expected: some infinity response
+actual: infinity
+passed: true
+
+9. Inmultirea dintre 2 numere
+in: 2*3
+expected: 6
+actual: 6
+passed: true
+
+10. Impartirea inexact dintre 2 numere
+in: 2/3
+expected: 0.6666
+actual: 0.6666
+passed: true
+
+11. Impartirea exacta dintre 2 numere
+in: 4/2
+expected: 2
+actual: 2
+passed: true
+
+12. Inmultirea cu un numar negativ
+in: 2*(-3) OR 2*-3
+expected: -6
+actual: ERROR
+passed: false
+
+13. Inmultirea dintre 2 numere negative
+in: -2*(-3) OR -2*-3
+expected: 6
+actual: ERROR
+passed: false
+
+14. Impartirea cu un numar negativ
+in: 4/-2 OR 4/(-2)
+expected: -2
+actual: ERROR
+passed: false
+
+15. Impartirea dintre 2 numere negative
+in: -4/(-2)
+expected: 2
+actual: ERROR
+passed: false
+
+16. Adunare intre 3 numere:
+in: 1+2+3
+expected: 6
+actual: 6
+passed: true
+
+ 17. Adunare + scadere intre 3 numere:
+ in: 1+2-3
+ expected: 0
+ actual: 0
+ passed: true
+
+18. Adunare + inmultire intre 3 numere:
+in: 1+2*3
+expected: 7
+actual: 7
+passed: true
+
+18. Adunare + impartire intre 3 numere:
+in: 1+2/3
+expected: 1.6667
+actual: 1.6667
+passed: true

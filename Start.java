@@ -7,7 +7,7 @@ public class Start {
 		boolean active = true;
 		System.out.println("Enter expression here (type 'exit' to quit):");
 		Scanner scanIn;
-		
+		Calculator.testUnitarCalculate();//verify unit test
 		while (active) {
 			scanIn = new Scanner(System.in);
 			Expression = scanIn.nextLine();
